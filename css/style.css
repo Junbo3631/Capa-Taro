@@ -1,0 +1,82 @@
+   body {
+       font-family: Arial, sans-serif;
+       text-align: center;
+       color: #ddd;
+       background-color: #0763ed;
+   }
+
+   .container {
+       max-width: 600px;
+       margin: 0 auto;
+   }
+
+   .game-title {
+       font-size: 4em;
+       font-weight: bold;
+       color: hsl(0, 100%, 50%);
+       margin-top: 100px;
+   }
+
+   .question-box {
+       margin: 50px 0;
+   }
+
+   .result {
+       font-size: 1.5em;
+       font-weight: bold;
+       color: hsl(0, 100%, 50%);
+       margin: 20px;
+       animation: blink-fast .3s linear infinite;
+   }
+
+   @keyframes blink-fast {
+       0% {
+           opacity: 0;
+
+       }
+
+       20% {
+           opacity: 1;
+
+       }
+
+   }
+
+   .company-status {
+       font-size: 1.2em;
+
+       font-weight: bold;
+   }
+
+   .capacity-bar {
+       width: 100%;
+       background-color: #ddd;
+       margin-top: 10px;
+   }
+
+   .capacity-fill {
+       height: 20px;
+       background-color: #4CAF50;
+       text-align: right;
+       color: white;
+       padding-right: 5px;
+   }
+
+   button {
+       padding: 10px 20px;
+       font-size: 1em;
+       margin-top: 10px;
+   }
+
+   select {
+       font-size: 1em;
+       padding: 5px;
+       margin-top: 10px;
+   }
+
+   h1 {
+       font-size: 3em;
+       color: red;
+   }
+
+   

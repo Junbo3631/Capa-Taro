@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/style.css" -->
+    <title>キャパ太郎ゲーム</title>
+    <link rel="stylesheet" href="./css/style.css" 
+</head>
+
+    <image src="./img/tm.jpg">
+        <image src="./img/ms.png"></image>
+        <image src="./img/sj.png"></image>
+        <image src="./img/ad.png"></image>
+        <image src="./img/aig.png"></image>
+    </image>
+
+<body>
+    <div class="container">
+        <h1 class="game-title">キャパ太郎ゲーム</h1>
+        <div id="comment"></div>
+
+    <audio id="keySound" src="./sound/タイピング-パンタグラフ長1.mp3" preload="auto"></audio>
+
+
+    <!-- <p>お客さまから「保険購入」の依頼あり。ただちに保険を１００％集めよ。<br>「キャパ太郎」とは保険会社から１００％キャパシティ（保険）を集めるゲーム。</p> -->
+    <button onclick="startGame()">START</button>
+
+    <div id="questionSection" class="question-box" style="display: none;">
+        <p id="companyQuestion"></p>
+        <select id="userAnswer">
+            <!-- 動的に回答選択肢を追加 -->
+        </select>
+        <button onclick="submitAnswer()">回答する</button>
+    </div>
+
+    <div id="companyStatus" class="company-status"></div>
+    <h1 id="capacityDisplay" class="company-status">現在のキャパシティ: 0%</h1>
+    <p class="result" id="result"></p>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
